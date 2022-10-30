@@ -1,0 +1,346 @@
+/*General*/
+
+body{
+    background-color: khaki;
+}
+
+/*Estilos de presentacion*/
+#fondoBienvenida{
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Estilos de Cards en general*/
+.cardGenerales{
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    margin: 0;
+    color: white;
+}
+
+#productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 6vh;
+    color: white;
+}
+
+/*Cards de productos*/
+.titulosCard, .descripcionCard, .presentacionCard{
+    text-align: center;
+}
+
+.titulosCard, .presentacionCard{
+    color: saddlebrown;
+}
+.titulosCard{
+    font-size: 6vh;
+}
+.presentacionCard{
+    font-weight: 900;
+    font-size: 3vh;
+}
+
+.descripcionCard{
+    color: white;
+    font-size: 2.5vh;
+}
+
+.textos{
+    padding: 5vh;
+}
+
+#primerPar{
+    background-color: black;
+}
+
+.btnes{
+    position: relative;
+    left: 45%;
+    right: 45%;
+    color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.imgCard{
+    width: 100%;
+    height: 100%;
+}
+
+/*Alfajores*/
+
+#alfajores{
+    background-color: #D5AC8C;
+}
+
+.imgAlfajor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Calidad*/
+.calidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #312F2F;
+    padding: 2vh;
+}
+
+.calidadTitulo{
+    color: white;
+    background-color: #312F2F;
+    height: 100%;
+    text-align: center;
+    padding: 3vh;
+}
+
+.calidadTitulo > h4{
+    font-size: 6vh;
+}
+
+.calidadFondo{
+    background-color: #312F2F;
+}
+
+.logos{
+    width: 18vh;
+    height: 18vh;
+    margin: 1vh;
+}
+
+.calidad > div > p{
+    color: #D5AC8C;
+}
+
+.calidadLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 6vh;
+    padding-right: 6vh;
+    margin-bottom: 4vh;
+}
+
+/*Form*/
+
+#containerForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5AC8C;
+}
+
+.tituloForm{
+    color: saddlebrown;
+    font-size: 4vh;
+}
+
+.form{
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+.btnEnviar{
+    color: saddlebrown;
+    margin: 2vh;
+    font-size: 3vh;
+}
+
+label{
+    color: saddlebrown;
+}
+
+.fondoCasilla{
+    background-color: saddlebrown;
+}
+
+.form-group{
+    margin: 1vh;
+}
+
+/*Receta*/
+
+.btnReceta{
+    color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.fondoCard{
+    background-color: #312F2F;;
+}
+
+.tituloReceta{
+    text-align: center;
+    color: saddlebrown;
+    font-size: 5vh;
+}
+
+.textoReceta{
+    text-align: center;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.fondoTexto{
+    background-color: #D5AC8C;
+}
+
+.recetas{
+    color: white;
+    background-color: #312F2F;
+    height: 100%;
+    text-align: center;
+    padding: 3vh;
+}
+
+.recetas > h4{
+    font-size: 6vh;
+}
+
+/*Encontranos*/
+
+.encontranos{
+    background-color: black;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+}
+
+ul{
+    padding: 0;
+}
+
+i{
+    font-size: 8vh;
+}
+
+.tituloEnc{
+    color: saddlebrown;
+}
+
+.imgHumaya{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.marginEnc{
+    margin: 0;
+    padding: 0;
+}
+
+/*Footer*/
+
+footer > p{
+    background-color: #D5AC8C;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+/*Media query*/
+
+/*Celular*/
+@media screen and (min-width:480px) and (max-width:940px){
+    .cardGenerales{
+        color: black;
+    }
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        width: 60%;
+    }
+
+    #primerPar{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    #alfajores{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:941px) and (max-width:1300px){
+    #fondoBienvenida{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        width: 40%;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+    #primerPar{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #alfajores{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+}
+
+/*Compu*/
+@media screen and (min-width:1301px){
+    #fondoBienvenida{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        width: 40%;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+    #primerPar{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    #alfajores{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+}
