@@ -155,17 +155,28 @@ body{
     font-size: 3vh;
 }
 
+.btnEnviar:hover{
+    color: white;
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+
 label{
     color: saddlebrown;
 }
 
 .fondoCasilla{
-    background-color: saddlebrown;
+    background-color: white;
 }
 
 .form-group{
     margin: 1vh;
 }
+
+.error{
+    color:red;
+    display:none;
+  }
 
 /*Receta*/
 
