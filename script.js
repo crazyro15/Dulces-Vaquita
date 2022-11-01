@@ -5,10 +5,11 @@ $("#boton").on("click", function(){
       $("#nombre").addClass("is-invalid");
     }
   
-    //Verificacion de mail
-    if($("#mail").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1){
-      $("#error_mail").show();
-      $("#mail").addClass("is-invalid");
+    //Verificacion de telefono
+    //if($("#mail").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1){
+      if($("#telefono").val() == ""){
+      $("#error_telefono").show();
+      $("#telefono").addClass("is-invalid");
     }
 
     //Verificacion de consulta
@@ -17,5 +18,8 @@ $("#boton").on("click", function(){
         $("#consulta").addClass("is-invalid");
       }
     
-    
+    if(($("#nombre").val() != "") & ($("#mail").val() != "") & ($("#consulta").val() != "")){
+      alert('datos enviados!');
+      location.reload();
+    }
   })
