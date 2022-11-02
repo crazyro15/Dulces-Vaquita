@@ -67,6 +67,12 @@ body{
     border-color: saddlebrown;
 }
 
+.btnes:hover{
+    color: white;
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+
 .imgCard{
     width: 100%;
     height: 100%;
