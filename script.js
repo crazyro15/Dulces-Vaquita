@@ -6,7 +6,6 @@ $("#boton").on("click", function(){
     }
   
     //Verificacion de telefono
-    //if($("#mail").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1){
       if($("#telefono").val() == ""){
       $("#error_telefono").show();
       $("#telefono").addClass("is-invalid");
@@ -18,6 +17,7 @@ $("#boton").on("click", function(){
         $("#consulta").addClass("is-invalid");
       }
     
+    //Si todos los campos se completan
     if(($("#nombre").val() != "") & ($("#mail").val() != "") & ($("#consulta").val() != "")){
       alert('datos enviados!');
       location.reload();
