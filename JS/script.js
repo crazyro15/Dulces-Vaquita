@@ -23,3 +23,17 @@ $("#boton").on("click", function(){
       location.reload();
     }
   })
+
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.65340581016057, lng: -58.37054181797363},
+      zoom: 13
+    });
+
+    var marker = new google.maps.Marker({
+      position: {lat: -34.65340581016057, lng: -58.37054181797363},
+      map: map,
+      title: 'Dulces Vaquita'
+    });
+  }
