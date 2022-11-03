@@ -7,7 +7,8 @@ body{
 
 /*Estilos de presentacion*/
 #fondoBienvenida{
-    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    /* background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-image: url(./IMAGENES/Central/imagenCentral.png); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,7 +26,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: #312F2F;
     padding: 6vh;
     color: white;
 }
