@@ -36,4 +36,12 @@ $("#boton").on("click", function(){
       map: map,
       title: 'Dulces Vaquita'
     });
+    console.log(map);
   }
+
+//   // Solicitud GET (Request).
+// fetch('https://maps.googleapis.com/maps/api/js?key=AIzaSyDDoxTFUz4yio00-lx51J844HN8llIA_Cw&callback=initMap')
+// // Exito
+// .then(response => response.json())  // convertir a json
+// .then(json => console.log(json))    //imprimir los datos en la consola
+// .catch(err => console.log('Solicitud fallida', err)); // Capturar errores
