@@ -24,6 +24,7 @@ $("#boton").on("click", function(){
     }
   })
 
+  //Consumo API Google Maps
   var map;
   function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -38,10 +39,3 @@ $("#boton").on("click", function(){
     });
     console.log(map);
   }
-
-//   // Solicitud GET (Request).
-// fetch('https://maps.googleapis.com/maps/api/js?key=AIzaSyDDoxTFUz4yio00-lx51J844HN8llIA_Cw&callback=initMap')
-// // Exito
-// .then(response => response.json())  // convertir a json
-// .then(json => console.log(json))    //imprimir los datos en la consola
-// .catch(err => console.log('Solicitud fallida', err)); // Capturar errores

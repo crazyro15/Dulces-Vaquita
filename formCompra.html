@@ -38,9 +38,9 @@
 
     <div class="tab">Datos de tu tarjeta:
       
-      <p><input placeholder="Numero de tarjeta" id="numTarjeta" oninput="this.className = ''"></p>
-      <p><input placeholder="Vencimiento" id="fechaVenc" oninput="this.className = ''"></p>
-      <p><input placeholder="CSC" id="csc" oninput="this.className = ''"></p>
+      <p><input type="number" placeholder="Numero de tarjeta" id="numTarjeta" oninput="this.className = ''"></p>
+      <p><input type="number" placeholder="Vencimiento" id="fechaVenc" oninput="this.className = ''"></p>
+      <p><input type="number" placeholder="CSC" id="csc" oninput="this.className = ''"></p>
     </div>
 
     <div class="tab">Producto
@@ -56,11 +56,11 @@
     <!-- Botones -->
     <div style="overflow:auto;">
       <div class="button-container">
-        <button type="button" class="btn btn-outline-primary" id="prevBtn" onclick="nextPrev(-1)">Volver</button>
-        <button type="button" id="nextBtn" class="btn btn-outline-primary" onclick="nextPrev(1)">Next</button>
-        <button type="button" class="btn btn-outline-primary" onclick="volver()">Home</button>
-        <div>
-          <button type="button" id="pdf" class="btn btn-outline-primary" onclick="pdfexport();">Descargar comprobante</button>
+        <button type="button" class="btn btnes btn-outline-primary" id="prevBtn" onclick="nextPrev(-1)">Volver</button>
+        <button type="button" id="nextBtn" class="btn btnes btn-outline-primary" onclick="nextPrev(1)">Next</button>
+        <button type="button" class="btn btnes btn-outline-primary" onclick="volver()">Home</button>
+        <div class="button-container">
+          <button type="button" id="pdf" class="btn btnes btn-outline-primary" onclick="pdfexport();">Descargar comprobante</button>
         </div>
       </div>
     </div>

@@ -6,13 +6,7 @@
 }
 
 body{
-    background-color: khaki;
     background-color: #312F2F;
-    height: 100%;
-}
-
-html{
-    height: 100%;
 }
 
 #map{
@@ -20,15 +14,19 @@ html{
     width: 100%;
 }
 
+.navbar-collapse{
+    display: flex;
+    flex-direction: column;
+}
+
 /*Estilos de presentacion*/
 #fondoBienvenida{
-    /* background-image: url(./IMAGENES/Central/imagenCentral.png);
-    background-image: url(./IMAGENES/Central/imagenCentral.png); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /*Estilos de Cards en general*/
+
 .cardGenerales{
     border: none;
     background-color: transparent;
@@ -56,15 +54,18 @@ html{
 }
 .titulosCard{
     font-size: 6vh;
+    text-align: start;
 }
 .presentacionCard{
     font-weight: 900;
     font-size: 3vh;
+    text-align: start;
 }
 
 .descripcionCard{
     color: white;
     font-size: 2.5vh;
+    text-align: start;
 }
 
 .textos{
@@ -81,9 +82,18 @@ html{
     right: 45%;
     color: saddlebrown;
     border-color: saddlebrown;
+    font-size: 5vh;
+    margin-right: auto;
 }
 
-.btnes:hover{
+.btn{
+    font-size: 4vh;
+    background-color: white;
+    color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.btn:hover{
     color: white;
     background-color: saddlebrown;
     border-color: saddlebrown;
@@ -325,6 +335,11 @@ footer > p{
         flex-flow: column nowrap;
         justify-content: center;
     }
+
+    .tarjetasCelu{
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }
 
 /*Tablet*/
@@ -353,6 +368,7 @@ footer > p{
         flex-flow: column nowrap;
         justify-content: center;
     }
+    
     
 }
 
